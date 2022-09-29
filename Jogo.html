@@ -1,0 +1,47 @@
+<html>
+      <body>
+            <script>
+                  var player1 = prompt("Jogador 1 - pedra, papel ou tesoura?");
+                  var player2 = prompt("Jogador 2 - pedra, papel ou tesoura?");
+                  if (player1 == "pedra" && player2== "tesoura") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2} VENCEDOR: jogador 1`);
+                  }
+                  else if (player1 == "pedra" && player2 == "papel") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        VENCEDOR: jogador 2`);
+                  }
+                  else if (player1 == "pedra" && player2 == "pedra") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        EMPATE`);
+                  }
+                   else if (player1 == "papel" && player2 == "tesoura") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        VENCEDOR: jogador 2`);
+                  }
+                  else if (player1 == "papel" && player2 == "pedra") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        VENCEDOR: jogador 1`);
+                  }
+                  else if (player1 == "papel" && player2 == "papel") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        EMPATE`);
+                  }
+                  else if (player1 == "tesoura" && player2 == "pedra") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        VENCEDOR: jogador 2`);
+                  }
+                  else if (player1 == "tesoura" && player2 == "papel") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        VENCEDOR: jogador 1`);
+                  }
+                  else if (player1 == "tesoura" && player2 == "tesoura") {
+                        alert(`Jogador 1 = ${player1} e jogador 2 = ${player2}
+                        EMPATE`);
+                  }
+                  else {
+                        alert("Valor inválido!");
+                  }
+                  
+            </script>
+      </body>
+</html>
