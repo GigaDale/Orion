@@ -8,9 +8,9 @@
 var player1Option;
 var player2Option;
 
- /* Atribuição do nome da escolha */
- const escolhaP1 = (player) => {
-      switch (player) {
+      /* Atribuição do nome da escolha */
+ const escolhaPlayers = (player1, player2) => {
+      switch (player1) {
             case '1': 
                   player1Option = 'pedra';
                   break;
@@ -23,10 +23,8 @@ var player2Option;
                   player1Option = 'tesoura';
                   break;
       }
-}
 
-const escolhaP2 = (player) => {
-      switch (player) {
+      switch (player2) {
             case '1': 
                   player2Option = 'pedra';
                   break;
@@ -41,7 +39,7 @@ const escolhaP2 = (player) => {
       }
 }
 
-/* Lógica para as combinações de pedra */ 
+      /* Lógica para as combinações de pedra */ 
 const combinacoesPedra = (player1, player2) => {
       if (player1 == 1 && player2 == 3) {
             alert(`Jogador 1 = ${player1Option} e jogador 2 = ${player2Option}      VENCEDOR: jogador 1`);
@@ -55,7 +53,7 @@ const combinacoesPedra = (player1, player2) => {
       }
 }
 
-            /* Lógica para as combinações do papel */
+      /* Lógica para as combinações do papel */
 const combinacoesPapel = (player1, player2) => {
       if (player1 == 2 && player2 == 3) {
             alert(`Jogador 1 = ${player1Option} e jogador 2 = ${player2Option} VENCEDOR: jogador 2`);
@@ -69,7 +67,7 @@ const combinacoesPapel = (player1, player2) => {
       }
 }
 
-            /* Lógica para as combinações da tesoura */
+      /* Lógica para as combinações da tesoura */
 const combinacoesTesoura = (player1, player2) => {
       if (player1 == 3 && player2 == 1) {
             alert(`Jogador 1 = ${player1Option} e jogador 2 = ${player2Option} VENCEDOR: jogador 2`);
@@ -97,10 +95,8 @@ do{
       3 = tesoura
       4 = sair`);
 
-      escolhaP1(player1);
-      escolhaP2(player2);
+      escolhaPlayers(player1, player2);
 
-      
       switch (player1) {
             case '1':
                   combinacoesPedra(player1, player2);
